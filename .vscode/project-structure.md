@@ -5,6 +5,7 @@ This file maintains an up-to-date list of project files and structure.
 ## File Structure
 
 - 📁 `.vscode/`
+  - 📄 `.vscode\project-structure.md` (Markdown)
 - 📁 `L1/`
   - 📁 `L1\.vscode/`
     - 📄 `L1\.vscode\project-structure.md` (Markdown)
@@ -56,4 +57,4 @@ This file maintains an up-to-date list of project files and structure.
   - 📄 `L2\L2 - node.pptx.pdf` (Unknown)
 
 ---
-Last updated: 2025-07-03T18:01:16.770Z
+Last updated: 2025-07-10T06:30:00.692Z

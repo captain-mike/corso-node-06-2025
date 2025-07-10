@@ -1,8 +1,0 @@
-directories:
-  output: dist
-  buildResources: build
-appId: prova
-win:
-  target: nsis
-files: []
-electronVersion: 37.2.0
