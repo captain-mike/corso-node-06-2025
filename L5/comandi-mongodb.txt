@@ -1,0 +1,44 @@
+Show dbs -> Mostra i database
+use nome_database -> seleziona il database
+
+#collections
+db.CreateCollection('nome_collection') -> crea una collection nel database selezionato
+show collection -> mostra tutte le collection del database selezionato
+db.nome_collection.drop() -> elimina la collezione
+
+#read
+db.nome_collection.find() -> recupera tutti i documenti della collection
+db.nome_collection.find({chiave: valore}) -> recupera i documenti che soddisfano una condizione
+db.nome_collection.findOne({_id : ObjectId("ID")}) -> recupera un documento tramite il suo _id
+db.nome_collection.find({chiave: valore}).sort({chiave: 1}) -> recupero gli oggetti ordinato per una specifica chiave, in modo crescente
+db.nome_collection.find({chiave: valore}).sort({chiave: -1}) -> recupero gli oggetti ordinato per una specifica chiave, in modo decrescente
+db.nome_collection.find({chiave: /regex/})
+db.nome_collection.find({chiave: {$regex: "la tua regex"}})
+
+db.nome_collection.find().limit(10) -> recupero i primi 10 documenti
+db.nome_collection.find().skip(10) -> recupero tutti i documenti dopo aver saltato i primi 10
+
+db.nome_collection.find({chiave: {$in: ["valore1","valore2"]} })
+db.utenti.find({nome: {$in: ["Mario","Giovanna"]} })
+
+db.nome_collection.find({chiave: {$gt: valore} }) -> recupera i documenti con chiave maggiore del valore specificato
+
+//$lt, $gt, $lte, $gte => Operatori di confronto
+//$lt -> Minore di
+//$gt -> Maggiore di
+//$lte -> Minore di o uguale a
+//$gte -> Maggiore di o uguale a
+//
+
+#create
+db.nome_collection.insert({}); -> inserisce un documento, se la collection non esiste viene creata(DEPRECATO)
+db.nome_collection.insertOne({}); -> inserisce un documento, se la collection non esiste viene creata
+db_nome_collection.insertMany({},{}) -> Inserisce N documenti nella collection
+
+#update
+db.nome_collection.updateOne({chiave e valore per la ricerca dell'oggetto che vuoi aggiornare}) -> aggiorna documento
+Esempio di aggiornamento per id: db.nome_collection.updateOne({_id : ObjectId("ID")}, {$set: oggetto aggiornato }) 
+
+#delete
+db.nome_collection.deleteOne({chiave: valore}) -> elimina un documento
+Esempio di eliminazione per id: db.nome_collection.deleteOne({_id : ObjectId("ID")})
