@@ -11,5 +11,7 @@ pizze.use(logger)//log per le richieste su /pizza/*
 pizze.get('/', pizzeController.getAllPizzas);
 pizze.get('/:id', pizzeController.getSinglePizza);
 pizze.post('/', pizzeController.createPizza);
+pizze.put('/:id', pizzeController.updatePizza);
+pizze.delete('/:id',pizzeController.deletePizza);
 
 module.exports = pizze;
