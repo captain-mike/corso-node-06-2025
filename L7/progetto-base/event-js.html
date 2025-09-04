@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="https://google.it" id="b1">1</a>
+    <a href="https://google.it" id="b2">2</a>
+    <a href="https://google.it" id="b3">3</a>
+
+    <script>
+
+       document.querySelectorAll('a')
+       .forEach(el => {
+            el.addEventListener('click', function(event){
+                console.log(event);//info sull'evento
+                event.preventDefault()//Disabilito il funzionamento di default dell'elemento su cui si è cliccato
+                
+            })
+       })
+
+    </script>
+</body>
+</html>

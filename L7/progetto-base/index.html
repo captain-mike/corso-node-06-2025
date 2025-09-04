@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .disabledButton{
+            background-color: #000;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="app">
+
+        <a :href="linkDinamico">Link dinamico</a>
+
+        <hr>
+        <form>
+            <button :disabled="isButtonDisabled" :class="{disabledButton:isButtonDisabled}">Invia</button>
+        </form>
+
+        <button v-on:click="toggleButton">Attiva bottone</button>
+        
+        <hr>
+        
+        <form v-on:submit="inviaForm($event, 'Buongiorno')">
+            
+            <input type="text" v-model="testo" placeholder="Scrivi il tuo nome">
+            <button>Saluta</button>
+            
+        </form>
+        
+        <hr>
+
+        <form v-on:submit.prevent="inviaForm2('Buongiorno')">
+            
+            <input type="text" v-model="testo" placeholder="Scrivi il tuo nome">
+            <button>Saluta</button>
+            
+        </form>
+
+        <hr>
+
+        <input type="text" v-on:input.w="logKeys">
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
