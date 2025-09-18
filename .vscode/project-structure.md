@@ -43,9 +43,12 @@ This file maintains an up-to-date list of project files and structure.
       - 📄 `L2\express-app\middleware\mainLogger.middleware.js` (JavaScript)
         - *Exports:* `module.exports`
       - 📄 `L2\express-app\middleware\pizzaLogger.middleware.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `L2\express-app\middleware\unavilabIeIds.middleware.js` (JavaScript)
+        - *Exports:* `module.exports`
     - 📁 `L2\express-app\routes/`
       - 📄 `L2\express-app\routes\pizze.route.js` (JavaScript)
-        - *Imports:* `express`, `../controllers/pizze.controller`
+        - *Imports:* `express`, `../controllers/pizze.controller`, `../middleware/unavilabIeIds.middleware`, `../middleware/pizzaLogger.middleware`
         - *Exports:* `module.exports`
     - 📁 `L2\express-app\services/`
       - 📄 `L2\express-app\services\pizze.service.js` (JavaScript)
@@ -55,7 +58,129 @@ This file maintains an up-to-date list of project files and structure.
     - 📄 `L2\express-app\package-lock.json` (JSON)
     - 📄 `L2\express-app\package.json` (JSON)
   - 📄 `L2\L2 - node.pptx.pdf` (Unknown)
+- 📁 `L3/`
+  - 📁 `L3\.vscode/`
+    - 📄 `L3\.vscode\project-structure.md` (Markdown)
+  - 📁 `L3\events/`
+    - 📄 `L3\events\addListener.js` (JavaScript)
+      - *Imports:* `events`
+    - 📄 `L3\events\eventEmitter-once.js` (JavaScript)
+      - *Imports:* `events`
+    - 📄 `L3\events\eventEmitter.js` (JavaScript)
+      - *Imports:* `events`
+    - 📄 `L3\events\file.txt` (Unknown)
+    - 📄 `L3\events\watch.js` (JavaScript)
+      - *Imports:* `fs`
+  - 📁 `L3\file-system/`
+    - 📁 `L3\file-system\files-creati/`
+      - 📄 `L3\file-system\files-creati\pizze-sync.json` (JSON)
+      - 📄 `L3\file-system\files-creati\pizze.json` (JSON)
+    - 📄 `L3\file-system\file-da-leggere.json` (JSON)
+    - 📄 `L3\file-system\lettura-file.js` (JavaScript)
+      - *Imports:* `fs`
+    - 📄 `L3\file-system\scrittura-file.js` (JavaScript)
+      - *Imports:* `fs`
+  - 📄 `L3\L3 - node.pptx.pdf` (Unknown)
+- 📁 `L4/`
+  - 📁 `L4\file-system/`
+    - 📁 `L4\file-system\.vscode/`
+      - 📄 `L4\file-system\.vscode\project-structure.md` (Markdown)
+    - 📁 `L4\file-system\files/`
+    - 📁 `L4\file-system\files-creati/`
+      - 📄 `L4\file-system\files-creati\pizze-sync.json` (JSON)
+      - 📄 `L4\file-system\files-creati\pizze.json` (JSON)
+    - 📁 `L4\file-system\percorsi/`
+      - 📄 `L4\file-system\percorsi\percorsi.js` (JavaScript)
+        - *Imports:* `path`
+      - 📄 `L4\file-system\percorsi\utility-globali.js` (JavaScript)
+      - 📄 `L4\file-system\percorsi\utility-globali.mjs` (Unknown)
+    - 📄 `L4\file-system\access-promise.js` (JavaScript)
+      - *Imports:* `fs/promises`
+    - 📄 `L4\file-system\crea-rimuovi-file-cartelle.js` (JavaScript)
+      - *Imports:* `fs`
+    - 📄 `L4\file-system\file-da-leggere.json` (JSON)
+    - 📄 `L4\file-system\lettura-file.js` (JavaScript)
+      - *Imports:* `fs`
+    - 📄 `L4\file-system\readdir.js` (JavaScript)
+      - *Imports:* `fs`
+    - 📄 `L4\file-system\scrittura-file.js` (JavaScript)
+      - *Imports:* `fs`
+- 📁 `L5/`
+  - 📁 `L5\.vscode/`
+    - 📄 `L5\.vscode\project-structure.md` (Markdown)
+  - 📁 `L5\express-app/`
+    - 📁 `L5\express-app\.vscode/`
+      - 📄 `L5\express-app\.vscode\project-structure.md` (Markdown)
+    - 📁 `L5\express-app\controllers/`
+      - 📄 `L5\express-app\controllers\pizze.controller.js` (JavaScript)
+        - *Imports:* `../services/pizze.service`
+        - *Exports:* `module.exports`
+    - 📁 `L5\express-app\middleware/`
+      - 📄 `L5\express-app\middleware\mainLogger.middleware.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `L5\express-app\middleware\pizzaLogger.middleware.js` (JavaScript)
+        - *Exports:* `module.exports`
+      - 📄 `L5\express-app\middleware\unavilabIeIds.middleware.js` (JavaScript)
+        - *Exports:* `module.exports`
+    - 📁 `L5\express-app\models/`
+      - 📄 `L5\express-app\models\Pizza.js` (JavaScript)
+        - *Imports:* `mongoose`
+        - *Exports:* `module.exports`
+    - 📁 `L5\express-app\routes/`
+      - 📄 `L5\express-app\routes\pizze.route.js` (JavaScript)
+        - *Imports:* `express`, `../controllers/pizze.controller`, `../middleware/pizzaLogger.middleware`
+        - *Exports:* `module.exports`
+    - 📁 `L5\express-app\services/`
+      - 📄 `L5\express-app\services\pizze.service.js` (JavaScript)
+        - *Imports:* `../models/Pizza`
+        - *Exports:* `module.exports`
+    - 📄 `L5\express-app\db.js` (JavaScript)
+      - *Imports:* `mongoose`
+      - *Exports:* `module.exports`
+    - 📄 `L5\express-app\index.js` (JavaScript)
+      - *Imports:* `express`, `./db`, `./routes/pizze.route`, `./middleware/mainLogger.middleware`
+    - 📄 `L5\express-app\package-lock.json` (JSON)
+    - 📄 `L5\express-app\package.json` (JSON)
+  - 📄 `L5\comandi-mongodb.txt` (Unknown)
+- 📁 `L6/`
+  - 📁 `L6\.vscode/`
+    - 📄 `L6\.vscode\project-structure.md` (Markdown)
+    - 📄 `L6\.vscode\settings.json` (JSON)
+  - 📁 `L6\esempio-react/`
+    - 📁 `L6\esempio-react\public/`
+      - 📄 `L6\esempio-react\public\vite.svg` (Unknown)
+    - 📁 `L6\esempio-react\src/`
+      - 📁 `L6\esempio-react\src\assets/`
+        - 📄 `L6\esempio-react\src\assets\react.svg` (Unknown)
+      - 📄 `L6\esempio-react\src\App.css` (CSS)
+      - 📄 `L6\esempio-react\src\App.jsx` (React)
+        - *Imports:* `react`, `./App.css`
+      - 📄 `L6\esempio-react\src\index.css` (CSS)
+      - 📄 `L6\esempio-react\src\main.jsx` (React)
+        - *Imports:* `react`, `react-dom/client`, `./index.css`, `./App.jsx`
+    - 📄 `L6\esempio-react\.gitignore` (Unknown)
+    - 📄 `L6\esempio-react\eslint.config.js` (JavaScript)
+      - *Imports:* `@eslint/js`, `globals`, `eslint-plugin-react-hooks`, `eslint-plugin-react-refresh`
+    - 📄 `L6\esempio-react\index.html` (HTML)
+    - 📄 `L6\esempio-react\package-lock.json` (JSON)
+    - 📄 `L6\esempio-react\package.json` (JSON)
+    - 📄 `L6\esempio-react\README.md` (Markdown)
+    - 📄 `L6\esempio-react\vite.config.js` (JavaScript)
+      - *Imports:* `vite`, `@vitejs/plugin-react`
+  - 📁 `L6\progetto-base/`
+    - 📄 `L6\progetto-base\app.js` (JavaScript)
+    - 📄 `L6\progetto-base\esempio-this.html` (HTML)
+    - 📄 `L6\progetto-base\index.html` (HTML)
+  - 📄 `L6\L1 - Vue.pptx.pdf` (Unknown)
+- 📁 `L7/`
+  - 📁 `L7\progetto-base/`
+    - 📁 `L7\progetto-base\.vscode/`
+      - 📄 `L7\progetto-base\.vscode\project-structure.md` (Markdown)
+    - 📄 `L7\progetto-base\app.js` (JavaScript)
+    - 📄 `L7\progetto-base\event-js.html` (HTML)
+    - 📄 `L7\progetto-base\index.html` (HTML)
+  - 📄 `L7\L2 - Vue.pptx.pdf` (Unknown)
 - 📄 `.gitignore` (Unknown)
 
 ---
-Last updated: 2025-07-10T09:36:06.242Z
+Last updated: 2025-09-18T16:03:58.146Z
