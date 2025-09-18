@@ -180,7 +180,34 @@ This file maintains an up-to-date list of project files and structure.
     - 📄 `L7\progetto-base\event-js.html` (HTML)
     - 📄 `L7\progetto-base\index.html` (HTML)
   - 📄 `L7\L2 - Vue.pptx.pdf` (Unknown)
+- 📁 `L8/`
+  - 📁 `L8\.vscode/`
+    - 📄 `L8\.vscode\project-structure.md` (Markdown)
+  - 📁 `L8\todo-list/`
+    - 📁 `L8\todo-list\.vscode/`
+      - 📄 `L8\todo-list\.vscode\extensions.json` (JSON)
+      - 📄 `L8\todo-list\.vscode\settings.json` (JSON)
+    - 📁 `L8\todo-list\public/`
+      - 📄 `L8\todo-list\public\favicon.ico` (Unknown)
+    - 📁 `L8\todo-list\src/`
+      - 📁 `L8\todo-list\src\components/`
+        - 📄 `L8\todo-list\src\components\Task.vue` (Unknown)
+        - 📄 `L8\todo-list\src\components\TaskForm.vue` (Unknown)
+      - 📄 `L8\todo-list\src\App.vue` (Unknown)
+      - 📄 `L8\todo-list\src\main.js` (JavaScript)
+        - *Imports:* `vue`, `./App.vue`
+    - 📄 `L8\todo-list\.gitignore` (Unknown)
+    - 📄 `L8\todo-list\index.html` (HTML)
+    - 📄 `L8\todo-list\jsconfig.json` (JSON)
+    - 📄 `L8\todo-list\package-lock.json` (JSON)
+    - 📄 `L8\todo-list\package.json` (JSON)
+    - 📄 `L8\todo-list\README.md` (Markdown)
+    - 📄 `L8\todo-list\vite.config.js` (JavaScript)
+      - *Imports:* `node:url`, `vite`, `@vitejs/plugin-vue`, `vite-plugin-vue-devtools`
+  - 📄 `L8\Esercitazione Node.js.pptx (3).pdf` (Unknown)
+  - 📄 `L8\L3 - Vue.pptx.pdf` (Unknown)
+  - 📄 `L8\template.html` (HTML)
 - 📄 `.gitignore` (Unknown)
 
 ---
-Last updated: 2025-09-18T16:03:58.146Z
+Last updated: 2025-09-18T22:06:23.902Z
